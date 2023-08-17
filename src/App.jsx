@@ -37,7 +37,7 @@ function App() {
   
 
   return (
-    <main className=' grid  text-base min-h-screen bg-[url("./images/fondo.png")] max-w-[1200px] bg-cover '>
+    <main className=' grid  text-base min-h-full bg-[url("./images/fondo.png")] max-w-[1200px] bg-cover '>
          <LocationForm handleSubmit = {handleSubmit}/>  
       
           <LocationInfo currentLocation =  {currentLocation}/>
