@@ -37,13 +37,28 @@ function App() {
   
 
   return (
-    <main className=' grid  text-base min-h-full bg-[url("./images/fondo.png")] max-w-[1200px] bg-cover '>
-         <LocationForm handleSubmit = {handleSubmit}/>  
+    
+    <main className='bg-[url("./images/fondo.png")]  min-h-screen bg-cover px-4 font-Nunito text-black grid grid-rows-[repeat(4,auto)] gap-8 place-items-center relative bg-bottom overflow-hidden'>
+
+      {/* trate de colocar aqui la imagen del logo
+      <figure>
+      <img src='./images/logos.png' alt='' />
+
+      </figure>
+
+       <section >
+        <img class="w-[260px] pt-8 min-[500px]:w-[350px]" src='./image/logo.png' alt='' />
+      </section> */}
       
-          <LocationInfo currentLocation =  {currentLocation}/>
-          <ResidentList residents = {currentLocation?.residents ?? []}/>         
 
       
+      <LocationForm handleSubmit = {handleSubmit}/>  
+      
+     
+      <LocationInfo currentLocation =  {currentLocation}/>
+      <ResidentList residents = {currentLocation?.residents ?? []}/>          
+       
+       
     </main>
   )
 }
