@@ -1,8 +1,8 @@
-//renderiza la informacion de la dimension
+
 import React from 'react'
 
 const LocationInfo = ({currentLocation}) => {
-    // console.log(currentLocation)
+    
   return (
     
     <section className='bg-[#893446] '>

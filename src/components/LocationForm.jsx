@@ -1,4 +1,4 @@
-//estructiura donde ususario busca sus dimensiones
+
 import React from 'react'
 
 const LocationForm = ({handleSubmit}) => {

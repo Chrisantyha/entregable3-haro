@@ -1,9 +1,9 @@
-//renderiza cada una de las tarejteas donde se presenta residente
+
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
 const ResidentCard = ({residentUrl}) => {
-    // console.log(residentUrl)
+
     const [residentInfo, setResidentInfo] = useState(null)
 
 
@@ -15,10 +15,10 @@ const ResidentCard = ({residentUrl}) => {
     }, [])
     
   return (
-    // aqui trato de fusionar las dos cajas
+    
     <article className='  w-[285px] h-80           grid grid-rows-[auto_auto] place-items-center select-none  '>
         <header className='   text-center relative z-10'>
-            {/* aqui abajo hago redonda la image */}
+           
             <img className='  h-[150px] aspect-square border-solid border-[5px] border-[#893446] rounded-full' src={residentInfo?.image} alt='' />
             
            
